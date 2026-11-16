@@ -4,7 +4,7 @@ root=Path(__file__).resolve().parent.parent
 names=['函数与极限','导数与微分','微分中值定理与导数的应用','不定积分','定积分','定积分的应用','微分方程','向量代数与空间解析几何','多元函数微分法及其应用','重积分','曲线积分与曲面积分','无穷级数']
 desc=['从变化的趋势出发，建立微积分的第一块基石。','用切线与变化率，理解局部的数学规律。','把导数变成研究函数与解决问题的工具。','逆着求导的方向，寻找所有原函数。','从无限细分到整体累积，连接微分与积分。','让面积、体积、弧长与物理量拥有统一的语言。','用函数与导数的关系，描述动态世界。','建立空间坐标与方向的几何直觉。','从一条曲线走向多维空间中的变化。','在平面与空间里，计算更广泛的累积量。','沿着曲线和曲面，理解流动与环流。','用无穷多项，逼近函数与周期信号。']
 icons=['limit','derivative','curve','integral','area','shape','equation','vector','gradient','double','flux','series']
-optional={3:[8],5:[5],7:[9,10],9:[9,10],10:[5],12:[6]}
+optional={5:[5],7:[9,10],9:[9,10],10:[5],12:[6]}
 chapters=[dict(id=i+1,title=n,description=desc[i],icon=icons[i],volume='上册' if i<7 else '下册',lessons=[]) for i,n in enumerate(names)]
 lessons=[]
 for line in (root/'scripts/course.txt').read_text().splitlines():
