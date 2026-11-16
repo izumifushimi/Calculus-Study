@@ -21,3 +21,11 @@ npm start
 
 scripts/check.cjs：全课程加载、全部164题正确答案、数学排版、错题订正、收藏、进度保存、筛选搜索与四个动态图形。
 scripts/browser-check.cjs：本地Chrome桌面/手机布局检查与学生操作流程。
+
+## 在线访问与发布
+
+GitHub Pages 使用 `.github/workflows/pages.yml` 自动发布 `dist/`：推送到 `main` 后，工作流先生成课程数据、检查生成文件一致性并执行交互验证，通过后部署网站。
+
+网页： https://izumifushimi.github.io/Calculus-Study/
+
+公开源码： https://github.com/izumifushimi/Calculus-Study
