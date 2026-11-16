@@ -1,0 +1,1 @@
+{"name":"zhiwei-calculus","version":"1.0.0","private":true,"scripts":{"start":"python3 -m http.server 4173 --directory dist","check":"node scripts/check.cjs"},"devDependencies":{"jsdom":"^26.1.0","katex":"^0.16.22","playwright-core":"^1.65.1"}}
